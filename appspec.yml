@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: 
+    destination: /webapps/Config
+hooks:	
+  ApplicationStart:
+    - location: Scripts/springboot.sh
+      timeout: 300
+
