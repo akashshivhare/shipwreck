@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /webapps/Config
+  - source: /shipwreck/src/main/resources/public
+    destination: /var/www/html
 hooks:	
   ApplicationStart:
     - location: Scripts/springboot.sh
