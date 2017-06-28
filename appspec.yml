@@ -3,8 +3,9 @@ os: linux
 files:
   - source: /shipwreck/src/main/resources/public
     destination: /var/www/html
+  - source: /
+    destination: /webapps/myApp
 hooks:	
   ApplicationStart:
     - location: Scripts/springboot.sh
       timeout: 300
-
